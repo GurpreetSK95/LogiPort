@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">LogiPort TestApp</string>
     <string name="PasswordText">Password</string>
-    <string name="LoginText">Register</string>
-    <string name="PARSE_APP_ID">xCZkxJAECrzIstFxSYKYAQUHllOdGU1RcRIMefGR</string>
-    <string name="PARSE_CLIENT_KEY">5uzD5OvR87TZDSvFtMfhvzfKsf5GsOVgPEefRGfn</string>
+    <string name="LoginText">Login</string>
+    <string name="PARSE_APP_ID">zQBBQYdnaCFrqIyDMtUswo0cmDVw9EJd0NmeSVnK</string>
+    <string name="PARSE_CLIENT_KEY">rcnkFhiORaNE22j3sJEeGak9wkwuFDTN5Eaj9m3V</string>
     <string name="title_activity_main_screen">MainScreen</string>
     <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_check_logged_status">CheckLoggedStatus</string>
 </resources>

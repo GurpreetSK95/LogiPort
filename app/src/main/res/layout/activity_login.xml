@@ -36,6 +36,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
         android:hint="@string/PasswordText"
+        android:inputType="textPassword"
         android:id="@+id/PasswordEditText"
         android:layout_marginTop="8dp"
         app:met_baseColor="@color/colorPrimary"
@@ -45,10 +46,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log in"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
         android:layout_marginTop="40dp"
         android:id="@+id/button"
         android:layout_gravity="center_horizontal"
         />
-
 
 </LinearLayout>

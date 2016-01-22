@@ -3,13 +3,6 @@ package com.gurpreetsingh.www.logiporttestapp;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.widget.TextView;
-
-import com.parse.GetCallback;
-import com.parse.ParseException;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
-import com.parse.SaveCallback;
 
 public class MainScreen extends AppCompatActivity {
 
@@ -21,7 +14,7 @@ public class MainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        Splash.loginObject.saveInBackground(new SaveCallback() {
+    /*    Splash.loginObject.saveInBackground(new SaveCallback() {
             public void done(ParseException e) {
                 if (e == null) {
                     // Success!
@@ -47,7 +40,7 @@ public class MainScreen extends AppCompatActivity {
                 }
             }
         });
-
+*/
     }
 
 }
