@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:scaleType="fitCenter"
         android:padding="8dp"
+        android:src="@drawable/ic_language_black_48dp"
         android:layout_gravity="center_horizontal"
         android:id="@+id/LoginActivityImageView"
         android:contentDescription="LoginActivityImageView"

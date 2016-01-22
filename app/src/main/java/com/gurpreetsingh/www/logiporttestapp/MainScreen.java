@@ -14,6 +14,7 @@ public class MainScreen extends AppCompatActivity {
         setContentView(R.layout.activity_main_screen);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
     /*    Splash.loginObject.saveInBackground(new SaveCallback() {
             public void done(ParseException e) {
                 if (e == null) {
