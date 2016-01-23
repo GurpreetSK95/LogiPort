@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     String loginID;
     String password;
     ProgressDialog progress;
+    EditText loginET, passwordET;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +30,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final EditText loginET = (EditText) findViewById(R.id.LoginEditText);
-        final EditText passwordET = (EditText) findViewById(R.id.PasswordEditText);
+        loginET = (EditText) findViewById(R.id.LoginEditText);
+        passwordET = (EditText) findViewById(R.id.PasswordEditText);
 
         Button button = (Button) findViewById(R.id.button);
 
@@ -61,11 +62,13 @@ public class LoginActivity extends AppCompatActivity {
                                     Toast.makeText(LoginActivity.this
                                             , "Wrong Credentials\nPlease try again", Toast.LENGTH_SHORT).show();
                                     progress.dismiss();
+                                    setAllNull();
                                     e.printStackTrace();
                                 } else {
                                     Intent intent = new Intent(LoginActivity.this, MainScreen.class);
                                     startActivity(intent);
                                     progress.dismiss();
+                                    finish();
                                 }
                             }
                         });
@@ -75,8 +78,8 @@ public class LoginActivity extends AppCompatActivity {
                     builder1.setMessage("Please connect to network");
                     builder1.setCancelable(true);
                     builder1.setIcon(android.R.drawable.ic_dialog_alert);
-                    builder1.setNeutralButton(
-                            "Dismiss",
+                    builder1.setPositiveButton(
+                            "OK",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     dialog.cancel();
@@ -97,7 +100,11 @@ public class LoginActivity extends AppCompatActivity {
 
     protected void onPause() {
         super.onPause();
-        finish();
+    }
+
+    private void setAllNull() {
+        loginET.setText("");
+        passwordET.setText("");
     }
 }
 

@@ -30,6 +30,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp"
         app:met_baseColor="@color/colorPrimary"
+        app:met_textColor="@color/text"
         app:met_floatingLabel="normal"/>
 
     <com.rengwuxian.materialedittext.MaterialEditText
@@ -40,6 +41,7 @@
         android:inputType="textPassword"
         android:id="@+id/PasswordEditText"
         android:layout_marginTop="8dp"
+        app:met_textColor="@color/text"
         app:met_baseColor="@color/colorPrimary"
         app:met_floatingLabel="normal"/>
 
@@ -48,7 +50,7 @@
         android:layout_height="wrap_content"
         android:text="Log in"
         android:background="@color/colorPrimary"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/text"
         android:textStyle="bold"
         android:layout_marginTop="40dp"
         android:id="@+id/button"

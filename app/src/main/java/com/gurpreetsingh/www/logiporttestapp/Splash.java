@@ -3,8 +3,11 @@ package com.gurpreetsingh.www.logiporttestapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
+import com.parse.ParseException;
 import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
 public class Splash extends AppCompatActivity {
 
@@ -19,7 +22,7 @@ public class Splash extends AppCompatActivity {
             intent = new Intent(this, MainScreen.class);
             startActivity(intent);
         } else {
-/*
+
             //Made to register user on first run: UserName and Password pre-defined
             boolean firstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("firstRun", true);
             if (firstRun) {
@@ -42,7 +45,7 @@ public class Splash extends AppCompatActivity {
                         .putBoolean("firstRun", false)
                         .commit();
             }
-*/
+
             intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
