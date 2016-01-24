@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:text="Log in"
         android:background="@color/colorPrimary"
-        android:textColor="@color/text"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_marginTop="40dp"
         android:id="@+id/button"

@@ -94,9 +94,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
         android:text="GO" />
 
 </LinearLayout>
